@@ -48,18 +48,33 @@ example result :
 
 ```JSON
 {
-"info": [
-	"Japanese: Re：ゼロから始める異世界生活",
-	"Genre : Drama, Fantasy, Psychological, Thriller",
-	"Seasons : Summer 2020",
-	"Producers: N/A",
-	"Type: BD",
-	"Status: Completed",
-	"Total Episode: 25",
-	"Score: 8.50",
-	"Duration: 25 min. per ep.",
-	"Released on: Jul 08, 2020"
-],
+ "info": [
+    "Japanese: Re：ゼロから始める異世界生活",
+    "Genre : Drama, Fantasy, Psychological, Thriller",
+    "Seasons : Summer 2020",
+    "Producers: N/A",
+    "Type: BD",
+    "Status: Completed",
+    "Total Episode: 25",
+    "Score: 8.50",
+    "Duration: 25 min. per ep.",
+    "Released on: Jul 08, 2020"
+    ],
+ "result": [
+    {
+     "title": "Download Re: Zero kara Hajimeru Isekai Seikatsu Season 2 Part 1 Batch BD Subtitle Indonesia",
+     "download": [
+       {
+	"resolution": "360P",
+        "link": [
+	   "Google Sharer : https://acefile.co/f/40245742/kusonime-mc-ampas-s2-bedeh-fontsubs-rar",
+	   "Google Drive : https://drive.google.com/uc?export=download&id=1CnfQEaLLNoJ395mz7vetDDy8sMpP1dsL",
+	   "Hxfileco : https://hxfile.co/cgedas0r257l",
+	   "Mega.nz : https://mega.nz/file/SxAAETKY#PZgxFMea40WZfWKwWlXbC-0prBleYSJObbbPV1fIb-c",
+	   "UptoBox : https://uptobox.com/u55mqao3zw24"
+	   ]
+        }
+     ]
 }
 ```
 
