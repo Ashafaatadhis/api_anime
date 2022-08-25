@@ -13,8 +13,10 @@ const KusonimeController = async (req, res) => {
     return;
   }
   const linkGan = hasilList[0].split(" : ")[1];
-  const { info, link } = await getAnime(linkGan);
-  res.status(200).json({ info, link });
+  const hasil = await getAnime(linkGan);
+  // const { info, link } = await getAnime(linkGan);
+  res.json(hasil);
+  // res.status(200).json({ info, link });
 };
 
 module.exports = KusonimeController;

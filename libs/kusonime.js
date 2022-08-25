@@ -40,36 +40,76 @@ const searchAnime = async (judulAnime) => {
 const getAnime = async (linkGan) => {
   const dataWrap = await axios.get(linkGan);
   const $ = cheerio.load(dataWrap.data);
-  //   fs.writeFileSync("apa/halamanUtama.html", $(".venutama").html());
+  // fs.writeFileSync("apa/dxd.html", $(".venutama").html());
+  let result = {};
   let info = [];
-  let link = {};
   $(".lexot .info p").each((i, el) => {
     info[i] = $(el).toString().trim();
   });
 
   //   link
-  const scrapLink = $(".lexot .smokeurl");
-
+  const scrapLink = $(".lexot .smokeddl");
+  let dataResult = [];
+  scrapLink.each((i, el) => {
+    // console.log($(el).html());
+    let title = $(el).find(".smokettl").text();
+    let download = [];
+    let link = [];
+    let resolution = "";
+    // ini[i] =
+    $(el)
+      .find(".smokeurl")
+      .each((index2, el2) => {
+        resolution = $(el2).find("strong").text();
+        // console.log($(el2).find("a").attr("href"));
+        $(el2)
+          .find("a")
+          .each((index3, el3) => {
+            // let link = [];
+            link[index3] = $(el3).text() + " : " + $(el3).attr("href");
+            //             // let dataResult = {};
+            //           // dataResult = { title };
+            //           // dataResult = {...dataResult, link: }
+            ///            // ini[i] = { ...dataResult };
+            // ini[i] = {
+            //   title, resolution
+            // }
+            // console.log($(el3).attr("href"));
+            console.log($(el3).text());
+          });
+        download[index2] = { resolution, link };
+      });
+    console.log(download);
+    dataResult[i] = { title, download };
+    // fs.writeFileSync("apa/smokeddl.html", $(el).html());
+  });
+  // res.json(dataResult);
+  // console.log(dataResult);
+  info = info.map((v) => striptags(v));
+  result = { info, result: dataResult };
+  return result;
   //   scrapLink.find("a").each((i, el) => {
   //     link[i] = $(el).attr("href");
   //   });
 
-  scrapLink.each((i, el) => {
-    let linkWi = [];
+  // -------------------------awal komen
+  // scrapLink.each((i, el) => {
+  //   let linkWi = [];
 
-    $(el)
-      .find("a")
-      .each((h, r) => {
-        linkWi[h] = $(r).text() + " : " + $(r).attr("href");
-      });
+  //   $(el)
+  //     .find("a")
+  //     .each((h, r) => {
+  //       linkWi[h] = $(r).text() + " : " + $(r).attr("href");
+  //     });
 
-    link[$(el).find("strong").text()] = linkWi;
-  });
+  //   link[$(el).find("strong").text()] = linkWi;
+  // });
 
-  //   console.log(link);
-  info = info.map((v) => striptags(v));
+  // //   console.log(link);
+  // info = info.map((v) => striptags(v));
 
-  return { info, link };
+  // return { info, link };
+  // ------------------------------akhir komen
 };
 
 module.exports = { listAnime, getAnime, searchAnime };
