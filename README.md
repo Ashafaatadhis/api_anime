@@ -46,7 +46,7 @@ Follows the instructions for start the program
 
 example result : 
 
-   ``` go
+   ```JSON
 {
 	"info": [
 		"Japanese: Re：ゼロから始める異世界生活",
