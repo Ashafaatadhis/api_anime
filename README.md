@@ -19,7 +19,7 @@
 
 ## About The Project
 
-This is my simple unofficial API kusonime for get link download wihout through the shortlink
+This is my simple unofficial API kusonime for get link download without through the shortlink
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
