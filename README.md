@@ -46,8 +46,8 @@ Follows the instructions for start the program
 
 example result : 
 
-   ```sh
-   {
+   ``` go
+{
 	"info": [
 		"Japanese: Re：ゼロから始める異世界生活",
 		"Genre : Drama, Fantasy, Psychological, Thriller",
@@ -173,7 +173,7 @@ example result :
 		}
 	]
 }
-   ```
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
